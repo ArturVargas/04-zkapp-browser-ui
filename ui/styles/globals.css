@@ -11,6 +11,16 @@ a {
   text-decoration: none;
 }
 
+a {
+  color: blue;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 20px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -21,6 +31,24 @@ a {
   }
   body {
     color: white;
-    background: black;
+    background: rgb(92,115,234);
+    background: radial-gradient(circle, rgba(92,115,234,1) 2%, rgba(70,234,252,1) 100%);
   }
 }
+
+.loader {
+  border: 16px solid #219ebc;
+  border-top: 16px solid #023047;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  padding:40px;
+  animation: spinloader 1s linear infinite;
+}
+
+@keyframes spinloader {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+

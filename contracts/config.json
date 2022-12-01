@@ -1,4 +1,11 @@
 {
   "version": 1,
-  "networks": {}
+  "networks": {
+    "add": {
+      "url": "https://proxy.berkeley.minaexplorer.com/graphql",
+      "keyPath": "keys/add.json",
+      "fee": "0.1",
+      "smartContract": "Add"
+    }
+  }
 }
